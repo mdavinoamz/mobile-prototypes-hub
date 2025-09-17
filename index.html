@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swap for Similar - Amazon Mobile Prototypes</title>
+    <style>
+        body {
+            font-family: 'Amazon Ember', Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: #f3f3f3;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #232f3e;
+            margin-bottom: 10px;
+            font-size: 32px;
+        }
+        .subtitle {
+            color: #666;
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+        .section {
+            margin-bottom: 40px;
+        }
+        .section h2 {
+            color: #0066c0;
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+        .prototype-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 20px;
+        }
+        .prototype-card {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 24px;
+            background: white;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .prototype-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        .prototype-card h3 {
+            color: #232f3e;
+            margin-bottom: 12px;
+            font-size: 20px;
+        }
+        .prototype-card p {
+            color: #666;
+            margin-bottom: 20px;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+        .prototype-link {
+            display: inline-block;
+            background: #FF9900;
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: bold;
+            transition: background 0.2s;
+        }
+        .prototype-link:hover {
+            background: #e88900;
+        }
+        .features {
+            list-style: none;
+            padding: 0;
+            margin: 15px 0;
+        }
+        .features li {
+            color: #666;
+            font-size: 13px;
+            margin-bottom: 6px;
+            padding-left: 16px;
+            position: relative;
+        }
+        .features li:before {
+            content: "✓";
+            color: #067d62;
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Swap for Similar</h1>
+        <p class="subtitle">Amazon Mobile Experience Prototypes with "Swap for Similar" functionality and ORB integration</p>
+        
+        <div class="section">
+            <h2>📱 Mobile Mockup</h2>
+            <div class="prototype-grid">
+                <div class="prototype-card">
+                    <h3>Figma Flows Mobile</h3>
+                    <p>Original mobile prototype featuring "Swap for Similar" functionality with bottom sheet comparisons and product alternatives.</p>
+                    <ul class="features">
+                        <li>"Swap for Similar" button with opportunity badges</li>
+                        <li>Mobile-optimized bottom sheet interface</li>
+                        <li>Tab-based filtering (Best Value, Fastest, Top Rated)</li>
+                        <li>Realistic product comparisons with benefits</li>
+                    </ul>
+                    <a href="mobile-mockup/figma-flows-mobile.html" class="prototype-link">View Mobile Mockup</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>🔄 ORB + Mobile Mockup</h2>
+            <div class="prototype-grid">
+                <div class="prototype-card">
+                    <h3>Cart + ORB Integration</h3>
+                    <p>Enhanced shopping cart experience with integrated ORB "Your regulars" widget and seamless navigation.</p>
+                    <ul class="features">
+                        <li>Complete shopping cart with ORB widget</li>
+                        <li>Navigation between cart and ORB bundle pages</li>
+                        <li>Functional swap buttons across all sections</li>
+                        <li>Quantity controls and bundle management</li>
+                    </ul>
+                    <a href="orb-mobile-mockup/cart-orb-mobile.html" class="prototype-link">View ORB Integration</a>
+                </div>
+                
+                <div class="prototype-card">
+                    <h3>ORB Standalone</h3>
+                    <p>Dedicated ORB "Your regulars" experience with bundle management and checkout functionality.</p>
+                    <ul class="features">
+                        <li>Standalone ORB bundle experience</li>
+                        <li>Quantity selectors and swap functionality</li>
+                        <li>Savings calculations and checkout flow</li>
+                        <li>Product comparison with realistic alternatives</li>
+                    </ul>
+                    <a href="orb-mobile-mockup/orb-mobile.html" class="prototype-link">View ORB Standalone</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
